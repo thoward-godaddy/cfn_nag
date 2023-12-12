@@ -5,7 +5,7 @@ require_relative 'lib/cfn-nag/version'
 Gem::Specification.new do |s|
   s.name          = 'cfn-nag'
   s.license       = 'MIT'
-  s.version       = CfnNagVersion::VERSION
+  s.version       = '0.8.11'
   s.bindir        = 'bin'
   s.executables   = %w[cfn_nag cfn_nag_rules cfn_nag_scan spcm_scan]
   s.authors       = ['Eric Kascic']
@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
   # versus what we used to run tests in cfn-nag before publishing cfn-nag
   # they are coupled and we are doing a good bit of experimenting in cfn-model
   # i might consider collapsing them again....
-  s.add_runtime_dependency('cfn-model', '0.6.6')
+  s.add_runtime_dependency('cfn-model', '0.6.10')
   s.add_runtime_dependency('logging', '~> 2.2.2')
   s.add_runtime_dependency('netaddr', '~> 2.0.4')
   s.add_runtime_dependency('optimist', '~> 3.0.0')
